@@ -1,15 +1,11 @@
-import { MetadataRoute } from 'next';
-import { getStoredProfile } from '@/lib/data';
+import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const profile = getStoredProfile();
-  const baseUrl = 'https://tiger-khan.vercel.app';
-
   return [
     {
-      url: baseUrl,
+      url: 'https://tiger-khan.vercel.app',
       lastModified: new Date(),
-      changeFrequency: 'weekly',
+      changeFrequency: 'monthly',
       priority: 1,
     },
   ];
