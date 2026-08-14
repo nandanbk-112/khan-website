@@ -1,0 +1,228 @@
+{
+  "name": " Tiger Khan ",
+  "profession": "Entrepreneur and Business Professional",
+  "tagline": "Mysuru-based entrepreneur and business professional with interests in real estate and finance,REALESTATE BUSINESS , FINANCE MANAGER",
+  "profilePhoto": "/uploads/photo_1785836402153_cpu9e1.jpg",
+  "stats": [
+    {
+      "id": "s1",
+      "value": "20YEARS + ",
+      "label": "IN REAL ESTATE BUSINESS"
+    },
+    {
+      "id": "s2",
+      "value": "18crore+ Assets",
+      "label": "ASSETS MANAGED"
+    },
+    {
+      "id": "s3",
+      "value": "30 + CASES ",
+      "label": "TOTAL CASES LIVE"
+    }
+  ],
+  "about": {
+    "badge": "",
+    "bio": "Tiger Khan is a Mysuru-based entrepreneur and business professional with interests and experience in real estate and finance.\n\nThis profile provides information about Tiger Khan's professional background, business activities, career experience, and connections in Mysuru and Karnataka.\n\nThe website features career information, photographs, videos, business interests, and contact information.",
+    "profession": " Entrepreneur and Business Professional ",
+    "company": "TIGER SHABAZ REAL ESTATE",
+    "industry": "Real Estate and Finance ",
+    "experience": "18+ Years",
+    "location": "NR Moholla , Mysore",
+    "sectionTitle": "About Tiger Khan"
+  },
+  "career": [
+    {
+      "id": "c_1785839739291",
+      "period": "2015",
+      "position": "owner and CEO",
+      "company": "Tiger Shabaz finance ",
+      "businessType": "Finance ",
+      "description": "Has 10+ years of experience on the finance too and also has multiple assets across mysore and karnataka "
+    },
+    {
+      "id": "c_1785839623160",
+      "period": "2008",
+      "position": "owner and CEO",
+      "company": "Mysore khan bone setters ",
+      "businessType": "health Care ",
+      "description": "Multiple branches across mysore and 20+years of experience on health sector "
+    },
+    {
+      "id": "c_1785839495222",
+      "period": "2008",
+      "position": "",
+      "company": "politics",
+      "businessType": "Political Member",
+      "description": "Have worked with Political members and have lots of links with politics across Mysuru and Karnataka"
+    },
+    {
+      "id": "4",
+      "period": "2008",
+      "position": "Owner and CEO",
+      "company": "TigerKhan RealEstate ",
+      "businessType": "RealEstate ",
+      "description": "Has around 18+ years of experience on REAL Estate business"
+    }
+  ],
+  "annualIncome": {
+    "show": true,
+    "amount": "18 CRORE ",
+    "note": "Information provided by the profile owner."
+  },
+  "gallery": [
+    {
+      "id": "g1",
+      "url": "/uploads/photo_1785836471078_x6v759.jpg",
+      "title": "",
+      "category": "",
+      "description": ""
+    },
+    {
+      "id": "g2",
+      "url": "/uploads/photo_1785836505226_6r547s.jpg",
+      "title": "",
+      "category": "",
+      "description": ""
+    },
+    {
+      "id": "g3",
+      "url": "/uploads/photo_1785836512514_naa9u9.jpg",
+      "title": "",
+      "category": "",
+      "description": ""
+    },
+    {
+      "id": "g4",
+      "url": "/uploads/photo_1785836527397_w3lt9r.jpg",
+      "title": "",
+      "category": "",
+      "description": ""
+    },
+    {
+      "id": "g5",
+      "url": "/uploads/photo_1785836544378_tyc0y4.jpg",
+      "title": "",
+      "category": "",
+      "description": ""
+    },
+    {
+      "id": "g6",
+      "url": "/uploads/photo_1785836556434_uo7m1h.jpg",
+      "title": "",
+      "category": "",
+      "description": ""
+    },
+    {
+      "id": "g_1785836573283",
+      "url": "/uploads/photo_1785836579975_lmf55o.jpg",
+      "title": "",
+      "category": "",
+      "description": "Add description here."
+    },
+    {
+      "id": "g_1785836590159",
+      "url": "/uploads/photo_1785836607319_htd9cr.jpg",
+      "title": "",
+      "category": "",
+      "description": "Add description here."
+    },
+    {
+      "id": "g_1785836591055",
+      "url": "/uploads/photo_1785836621666_apkiby.jpg",
+      "title": "",
+      "category": "",
+      "description": "Add description here."
+    },
+    {
+      "id": "g_1785836591357",
+      "url": "/uploads/photo_1785836646813_rxwpi7.jpg",
+      "title": "",
+      "category": "",
+      "description": "Add description here."
+    },
+    {
+      "id": "g_1785836714117",
+      "url": "/uploads/photo_1785836758184_dtj6zc.jpg",
+      "title": "",
+      "category": "",
+      "description": "Add description here."
+    },
+    {
+      "id": "g_1785836761573",
+      "url": "/uploads/photo_1785836772995_p4wqy6.jpg",
+      "title": "",
+      "category": "",
+      "description": "Add description here."
+    },
+    {
+      "id": "g_1785836788646",
+      "url": "/uploads/photo_1785836799630_ftk5v8.jpg",
+      "title": "",
+      "category": "",
+      "description": "Add description here."
+    },
+    {
+      "id": "g_1785837070327",
+      "url": "/uploads/photo_1785837078424_9o12mo.jpeg",
+      "title": "",
+      "category": "",
+      "description": "Add description here."
+    },
+    {
+      "id": "g_1785837505741",
+      "url": "/uploads/photo_1785837513119_w3vlj0.jpeg",
+      "title": "",
+      "category": "",
+      "description": "Add description here."
+    },
+    {
+      "id": "g_1785837506331",
+      "url": "/uploads/photo_1785837556228_lsbi0j.jpeg",
+      "title": "",
+      "category": "",
+      "description": "Add description here."
+    },
+    {
+      "id": "g_1785839965443",
+      "url": "/uploads/photo_1785840009290_iyy39y.jpeg",
+      "title": "Photo with Abdulla Khan Rowdy",
+      "category": "Leadership",
+      "description": "very close brothers "
+    }
+  ],
+  "videos": [
+    {
+      "id": "v1",
+      "title": "Instagram ",
+      "category": "Trending Video",
+      "description": "",
+      "videoUrl": "/uploads/photo_1785835596789_nqhhri.mp4",
+      "thumbnailUrl": "/images/video1.jpg",
+      "duration": ""
+    },
+    {
+      "id": "v2",
+      "title": "Instagram ",
+      "category": "Trending Reels ",
+      "description": "Walking with BodyGuard",
+      "videoUrl": "/uploads/photo_1785835747619_c681hr.mp4",
+      "thumbnailUrl": "",
+      "duration": ""
+    }
+  ],
+  "contact": {
+    "phone": "+91 9611556622",
+    "email": "mysorekhanbonesetters143@gmail.com",
+    "address": "NR Moholla, Mysore- 570009",
+    "whatsapp": "+919611556622"
+  },
+  "socials": {
+    "instagram": "https://www.instagram.com/tigershabaz143?igsh=MWl1dWFrc3k5bmxlbg==",
+    "facebook": "https://www.facebook.com/profile.php?id=100008911928871",
+    "linkedin": "https://linkedin.com",
+    "x": "https://x.com",
+    "youtube": "https://youtube.com",
+    "website": "https://tiger-khan.vercel.app"
+  },
+  "adminPasscode": "admin123"
+}
