@@ -28,6 +28,9 @@ export default function Hero({
           { id: 's3', value: 'Global', label: 'INVESTMENTS' },
         ];
 
+  const isTigerKhan =
+    name.toLowerCase().includes('tiger khan');
+
   return (
     <section
       id="home"
@@ -52,10 +55,10 @@ export default function Hero({
 
       <div className="max-w-6xl mx-auto px-6 md:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
+
           {/* Text Information Column */}
           <div className="lg:col-span-7 space-y-6">
-            
+
             {/* Status / Credibility Pill */}
             <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/90 border border-blue-200 text-xs font-bold text-slate-700 shadow-sm backdrop-blur-md">
               <span
@@ -73,7 +76,7 @@ export default function Hero({
               />
             </div>
 
-            {/* Main SEO Heading */}
+            {/* Main Heading */}
             <div>
               <h1
                 id="hero-heading"
@@ -88,6 +91,13 @@ export default function Hero({
               />
             </div>
 
+            {/* SEO-friendly location/business context */}
+            {isTigerKhan && (
+              <p className="text-sm sm:text-base font-semibold text-slate-600">
+                Mysuru, Karnataka · Real Estate & Finance
+              </p>
+            )}
+
             {/* Profession */}
             <p
               className="text-xl sm:text-2xl font-bold tracking-tight text-gradient-blue"
@@ -100,6 +110,15 @@ export default function Hero({
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-normal max-w-2xl pt-1">
               {tagline}
             </p>
+
+            {/* Additional SEO context */}
+            {isTigerKhan && (
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl">
+                Tiger Khan is a Mysuru-based entrepreneur and business
+                professional with interests and experience in real estate,
+                finance, and business activities across Mysuru and Karnataka.
+              </p>
+            )}
 
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center gap-4 pt-4">
@@ -170,11 +189,11 @@ export default function Hero({
           {/* Profile Photo Column */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
             <div className="relative w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden p-1.5 bg-gradient-to-tr from-blue-600 via-amber-400 to-indigo-600 shadow-soft-lg group">
-              
+
               <div className="relative w-full h-full rounded-[1.3rem] overflow-hidden bg-slate-900">
                 <Image
                   src={profilePhoto || '/images/profile.jpg'}
-                  alt={`${name} — ${profession}`}
+                  alt={`${name} - ${profession} in Mysuru`}
                   fill
                   priority
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 400px"
@@ -188,7 +207,7 @@ export default function Hero({
 
                 {/* Floating Executive Badge */}
                 <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-white/60 shadow-lg flex items-center justify-between">
-                  
+
                   <div className="flex items-center gap-3">
                     <div
                       className="w-9 h-9 rounded-xl bg-amber-500 text-white flex items-center justify-center font-bold text-xs shadow-md"
