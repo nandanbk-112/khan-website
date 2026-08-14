@@ -1,18 +1,11 @@
 import type { MetadataRoute } from 'next';
-import { getStoredProfile } from '@/lib/data';
 
-export default async function robots(): Promise<MetadataRoute.Robots> {
-  const profile = await getStoredProfile();
-
-  const baseUrl =
-    profile.socials?.website || 'https://tiger-khan.vercel.app';
-
+export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: '*',
       allow: '/',
     },
-
-    sitemap: `${baseUrl.replace(/\/$/, '')}/sitemap.xml`,
+    sitemap: 'https://tiger-khan.vercel.app/sitemap.xml',
   };
 }
