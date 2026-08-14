@@ -7,12 +7,13 @@ const SITE_URL = 'https://tiger-khan.vercel.app';
 export async function generateMetadata(): Promise<Metadata> {
   const profile = await getStoredProfile();
 
-  const title = 'Tiger Khan — Profile & Information';
+  const name = profile.name?.trim() || 'Tiger Khan';
+
+  const title = 'Tiger Khan | Mysuru Entrepreneur, Real Estate & Finance';
 
   const description =
-    profile.tagline ||
-    profile.about?.bio?.slice(0, 150) ||
-    'Learn more about Tiger Khan, including his profile, background, work, and professional information.';
+    profile.tagline?.trim() ||
+    'Tiger Khan is a Mysuru-based entrepreneur and business professional with experience in real estate, finance and business activities across Mysuru and Karnataka.';
 
   const profilePhoto = profile.profilePhoto || '';
 
@@ -30,29 +31,39 @@ export async function generateMetadata(): Promise<Metadata> {
 
     keywords: [
       'Tiger Khan',
+      'Tiger Khan Mysore',
+      'Tiger Khan Mysuru',
       'Tiger Khan profile',
       'Tiger Khan website',
-      profile.name,
-      profile.profession,
-      profile.about?.company,
-      profile.about?.industry,
-      'Executive Profile',
-      'Personal Website',
-    ].filter(Boolean),
+      'Tiger Khan real estate',
+      'Tiger Khan finance',
+      'Tiger Shabaz Real Estate',
+      'Mysuru entrepreneur',
+      'Mysore entrepreneur',
+      'Mysuru real estate',
+      'Mysore real estate',
+      'Mysuru business',
+      'Mysore business',
+      'Karnataka business professional',
+      'real estate business Mysuru',
+      'finance business Mysuru',
+    ],
 
     authors: [
       {
-        name: 'Tiger Khan',
+        name,
         url: SITE_URL,
       },
     ],
 
-    creator: 'Tiger Khan',
+    creator: name,
+
+    publisher: name,
 
     metadataBase: new URL(SITE_URL),
 
     alternates: {
-      canonical: '/',
+      canonical: SITE_URL,
     },
 
     openGraph: {
@@ -60,18 +71,17 @@ export async function generateMetadata(): Promise<Metadata> {
       description,
       url: SITE_URL,
       siteName: 'Tiger Khan',
+      locale: 'en_IN',
+      type: 'profile',
 
       images: [
         {
           url: imageUrl,
           width: 1200,
           height: 630,
-          alt: 'Tiger Khan',
+          alt: 'Tiger Khan - Mysuru Entrepreneur and Business Professional',
         },
       ],
-
-      locale: 'en_IN',
-      type: 'profile',
     },
 
     twitter: {
@@ -79,10 +89,6 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       images: [imageUrl],
-
-      creator: profile.socials?.x
-        ? `@${profile.socials.x.split('/').pop()}`
-        : undefined,
     },
 
     robots: {
@@ -107,6 +113,8 @@ export default async function RootLayout({
 }) {
   const profile = await getStoredProfile();
 
+  const name = profile.name?.trim() || 'Tiger Khan';
+
   const profilePhoto = profile.profilePhoto || '';
 
   const imageUrl = profilePhoto.startsWith('http')
@@ -118,35 +126,46 @@ export default async function RootLayout({
 
     '@type': 'Person',
 
-    name: profile.name || 'Tiger Khan',
+    '@id': `${SITE_URL}/#person`,
 
-    jobTitle: profile.profession || '',
-
-    worksFor: {
-      '@type': 'Organization',
-      name: profile.about?.company || '',
-    },
-
-    description: profile.tagline || '',
-
-    image: imageUrl,
+    name,
 
     url: SITE_URL,
 
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: profile.contact?.address || '',
+    image: imageUrl,
+
+    jobTitle:
+      profile.profession ||
+      'Entrepreneur and Business Professional',
+
+    description:
+      profile.about?.bio ||
+      profile.tagline ||
+      'Mysuru-based entrepreneur and business professional.',
+
+    worksFor: {
+      '@type': 'Organization',
+      name:
+        profile.about?.company ||
+        'Tiger Shabaz Real Estate',
     },
 
-    telephone: profile.contact?.phone || '',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Mysuru',
+      addressRegion: 'Karnataka',
+      addressCountry: 'IN',
+    },
 
-    email: profile.contact?.email || '',
+    telephone: profile.contact?.phone || undefined,
+
+    email: profile.contact?.email || undefined,
 
     sameAs: Object.values(profile.socials || {}).filter(Boolean),
   };
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en-IN" className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
 
